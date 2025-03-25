@@ -11,8 +11,9 @@ export default function TodoCard({ title }) {
                 </h5>
             </a>
             <button
-                onClick={() => setCompleted(true)}
+                onClick={() => setCompleted(!completed)}
                 disabled={completed}
+                aria-label={completed ? "Task completed" : "Mark task as complete"}
                 className={`inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white rounded-lg focus:ring-4 focus:outline-none ${
                     completed
                         ? "bg-gray-400 cursor-not-allowed"

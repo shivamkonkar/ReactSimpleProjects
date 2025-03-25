@@ -9,7 +9,7 @@ export default function TodoList(){
         <div className="flex justify-center m-20">
             <div className="grid grid-cols-3">
                 {todos.map((element, index) => (
-                    <TodoCard key={index} title={element.title} />
+                    <TodoCard key={element.id || index} title={element.title} />
                 ))}
             </div>
         </div>

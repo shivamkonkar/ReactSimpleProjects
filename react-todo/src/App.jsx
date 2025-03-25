@@ -13,10 +13,9 @@ function App() {
 
   return (
     <>
-    <RecoilRoot>      <AppBar></AppBar>
+      <AppBar/>
       <AddTodo/>
-      <TodoList/></RecoilRoot>
-
+      <TodoList/>
     </>
   )
 }
