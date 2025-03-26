@@ -31,7 +31,7 @@ export default function Accordion(){
 
     return <div className="wrapper">
         <button onClick={()=>toggleMultiSelector()}>Toggle Multi Selector Mode</button>
-        <div className="accordian">
+        <div className="accordion">
             {
             (DATA && DATA.length > 0) ? 
                 DATA.map(children => {
